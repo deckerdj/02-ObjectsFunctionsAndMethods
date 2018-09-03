@@ -29,6 +29,8 @@ def main():
     toto (3,4)
     print (toto(3,4))
 
+    turtle('blue', 10)
+
 
 ###############################################################################
 #
@@ -51,7 +53,7 @@ def toto(a,b):
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -71,15 +73,20 @@ def toto(a,b):
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-def turtle(color, thickness)
-    window = rg.TurtleWindow
-    turtle1 = rg.SimpleTurtle
-    turtle1.pen = rg.Pen
+def turtle(color, thickness):
+    window = rg.TurtleWindow()
+    turtle1 = rg.SimpleTurtle()
+    turtle1.pen = rg.Pen('green', thickness)
+    turtle2 = rg.SimpleTurtle()
+    turtle2.pen = rg.Pen(color,5)
+    turtle1.forward(100)
+    turtle2.backward(100)
+    window.close_on_mouse_click()
 
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
