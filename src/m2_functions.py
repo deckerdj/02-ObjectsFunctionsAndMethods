@@ -21,15 +21,18 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 import rosegraphics as rg
 
 import math
+
+
 def main():
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
-    toto (3,4)
-    print (toto(3,4))
 
-    turtle('blue', 10)
+    print(toto(3, 4))
+
+    #turtle('blue', 10)
+    turtle('red', 20)
 
 
 ###############################################################################
@@ -46,8 +49,8 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-def toto(a,b):
-    c = math.sqrt((a**2)+(b**2))
+def toto(a, b):
+    c = math.sqrt((a ** 2) + (b ** 2))
     return c
 
 
@@ -69,7 +72,7 @@ def toto(a,b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function and print the returned value,
+# DONE 4b
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -78,7 +81,7 @@ def turtle(color, thickness):
     turtle1 = rg.SimpleTurtle()
     turtle1.pen = rg.Pen('green', thickness)
     turtle2 = rg.SimpleTurtle()
-    turtle2.pen = rg.Pen(color,5)
+    turtle2.pen = rg.Pen(color, 5)
     turtle1.forward(100)
     turtle2.backward(100)
     window.close_on_mouse_click()
